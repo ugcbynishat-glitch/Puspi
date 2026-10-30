@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Little Birthday Surprise 🎂</title>
+<style>
+  :root{--rose:#e87998;--pink:#ffe5ed;--cream:#fffaf5;--plum:#66364e;--gold:#d8ad62}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--cream);color:var(--plum);font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}
+  .hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:32px 20px;position:relative;overflow:hidden;background:radial-gradient(circle at 15% 20%,#fff 0 2px,transparent 3px),linear-gradient(145deg,#fff7f8,#ffe5ed 55%,#fff7ec)}
+  .hero:before,.hero:after{content:"✦";position:absolute;color:#d8ad62;font-size:clamp(50px,9vw,100px);opacity:.5}
+  .hero:before{top:9%;left:8%;transform:rotate(-15deg)}.hero:after{right:9%;bottom:12%;transform:rotate(18deg)}
+  .eyebrow{font:600 11px/1.5 Arial,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#b45b78}
+  h1{font-size:clamp(3rem,9vw,7rem);font-weight:400;line-height:.98;margin:24px 0 18px;letter-spacing:-.045em}
+  h1 em{font-weight:400;color:var(--rose)}
+  .subtitle{font:15px/1.8 Arial,sans-serif;max-width:440px;margin:0 auto 30px;color:#81566b}
+  .button{border:0;display:inline-block;background:var(--plum);color:white;padding:14px 24px;border-radius:99px;text-decoration:none;font:600 12px Arial,sans-serif;letter-spacing:.08em;cursor:pointer;transition:transform .2s,background .2s}
+  .button:hover{transform:translateY(-3px);background:#8b4967}
+  .scroll{position:absolute;bottom:22px;font:10px Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;opacity:.7}
+  section{padding:88px 22px;max-width:1000px;margin:auto}
+  .section-tag{text-align:center;font:600 10px Arial,sans-serif;letter-spacing:.25em;text-transform:uppercase;color:#c26c89}
+  h2{text-align:center;font-weight:400;font-size:clamp(2.2rem,5vw,4rem);margin:14px 0 20px;letter-spacing:-.035em}
+  .intro{max-width:610px;text-align:center;font:15px/1.9 Arial,sans-serif;color:#856779;margin:0 auto}
+  .letter{max-width:700px;margin:40px auto 0;background:white;border:1px solid #f3d5df;padding:clamp(26px,6vw,54px);box-shadow:0 18px 60px #9d5b7410;position:relative}
+  .letter:before{content:"♡";position:absolute;top:15px;right:22px;font-size:25px;color:#e8a1b7}
+  .letter p{font-size:18px;line-height:1.9;margin:0 0 18px}
+  .letter .sign{color:#c26c89;font-style:italic;margin:24px 0 0}
+  .memory-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+  .memory{min-height:220px;padding:26px 20px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(145deg,#ffe9ef,#fff5e8);border:1px solid #f2d8df;position:relative;overflow:hidden}
+  .memory:nth-child(2){background:linear-gradient(145deg,#f5e9ff,#fff1f5)}.memory:nth-child(3){background:linear-gradient(145deg,#fff0d8,#ffe9ef)}
+  .memory .emoji{font-size:35px;position:absolute;top:22px;left:22px}
+  .memory h3{font-size:23px;font-weight:400;margin:0 0 8px}
+  .memory p{font:13px/1.65 Arial,sans-serif;color:#856779;margin:0}
+  .wish{background:#6a3a52;color:#fff7f8;text-align:center;padding:80px 22px}
+  .wish .section-tag{color:#f1b4c7}.wish h2{max-width:700px;margin:16px auto}
+  .wish p{font:14px/1.9 Arial,sans-serif;max-width:570px;margin:0 auto 28px;color:#f8dce5}
+  footer{text-align:center;padding:28px 15px;font:11px Arial,sans-serif;letter-spacing:.08em;color:#a47b8c}
+  .confetti{position:fixed;top:-20px;z-index:10;pointer-events:none;animation:fall linear forwards}
+  @keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:.2}}
+  @media(max-width:650px){.memory-grid{grid-template-columns:1fr}.memory{min-height:170px}section{padding:68px 20px}.letter p{font-size:16px}}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.confetti{display:none}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div>
+    <div class="eyebrow">A tiny website for a very special human</div>
+    <h1>Happy Birthday,<br><em>Puspi!</em></h1>
+    <p class="subtitle">Today deserves a little extra magic, a lot of love, and a reminder of how wonderful you are.</p>
+    <button class="button" onclick="openSurprise()">OPEN YOUR SURPRISE ✨</button>
+  </div>
+  <div class="scroll">A little love, just for you ↓</div>
+</header>
+
+<section id="letter">
+  <div class="section-tag">A note from me to you</div>
+  <h2>Hiii,</h2>
+  <p class="intro">Some people make ordinary days feel special just by being in them. This little corner of the internet is all yours today.</p>
+  <div class="letter">
+    <p>Happy birthday to my lifetime Bestie. ♡</p>
+    <p>Ektu cringe lagte pare.. but it's okay ektu na hoy cringe hoylam.. Kista ? onkdin emne jiagi nh... tr onk rag ase amr opr ami jni ... abr nao thakete pare .... idk how to fix things.. i don't even know j ami ki wrong chilam jonno tr sathe amr eto boro distance create hoyse</p>
+    <p>amdr moddhe jai choluk nh kn ami tore life e paiya onk blessed ... i do love you ... i do miss uss..thank you for being such an friend to me. I hope you never forget how much you matter.</p>
+    <p>Tr jonno onk onk dua kori mon theke .. Allah tor life sei shob dik jeigula tr jonno mongolkor.</p>
+    <p class="sign">With so much love, <br><strong> ♡</strong></p>
+  </div>
+</section>
+
+<section id="memories">
+  <div class="section-tag">Little things, big feelings</div>
+  <h2>Things I treasure ♡</h2>
+  <p class="intro">A few little reminders of why you're so special. Swap these for my favourite memories with you.</p>
+  <div class="memory-grid">
+    <article class="memory"><span class="emoji">☁️</span><h3>The late night calls</h3><p>Ammu thakle voy e voy e kotha bola r pagol er moto hasa.</p></article>
+    <article class="memory"><span class="emoji">🎀</span><h3>Hudai ghurte ber howa</h3><p>Out of nowhere Allah er nam e ber hoye jawa and plan chara eto vlo time par kora those are bleesings</p></article>
+    <article class="memory"><span class="emoji">🌷</span><h3>Having you around</h3><p>One of those quiet blessings I hope life lets me appreciate for a long, long time.</p></article>
+  </div>
+</section>
+
+<div class="wish">
+  <div class="section-tag">Make a wish</div>
+  <h2>Here's to your next beautiful chapter.</h2>
+  <p>Hoping for your more adventures. more belly laughs. more moments that make you stop and think, “life is actually beautiful.”</p>
+  <button class="button" style="background:#fff0f4;color:#66364e" onclick="celebrate()">SEND A LITTLE MAGIC ✨</button>
+</div>
+<footer>MADE WITH LOVE, JUST FOR YOU · ♡</footer>
+<script>
+function openSurprise(){document.getElementById('letter').scrollIntoView({behavior:'smooth'});celebrate(35)}
+function celebrate(count=65){
+ const symbols=['✦','♡','✿','✨','🎉'];
+ for(let i=0;i<count;i++){
+  const el=document.createElement('span');el.className='confetti';
+  el.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+  el.style.left=Math.random()*100+'vw';el.style.color=['#e87998','#d8ad62','#a77ab5','#f4a6b9'][Math.floor(Math.random()*4)];
+  el.style.fontSize=(12+Math.random()*18)+'px';el.style.animationDuration=(3+Math.random()*3)+'s';
+  document.body.appendChild(el);setTimeout(()=>el.remove(),6500);
+ }
+}
+</script>
+</body>
+</html>
